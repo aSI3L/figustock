@@ -1,9 +1,7 @@
 name: Monitor stock zonakids
 
 on:
-  schedule:
-    - cron: "*/5 * * * *" # cada 5 minutos (hora UTC; el intervalo es lo que importa)
-  workflow_dispatch: # botón para correrlo a mano desde la pestaña Actions
+  workflow_dispatch: # disparado por el cron externo (cron-job.org) vía API; tambien sirve el boton manual en Actions
 
 permissions:
   contents: write # necesario para commitear state.json
