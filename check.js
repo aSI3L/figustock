@@ -59,7 +59,7 @@ async function checkStock(url) {
     console.warn(`⚠️  No encontré la marca de stock en ${url} (¿cambió la página?)`);
     return null;
   }
-  return true; // ⚠️ PRUEBA: forzar "hay stock" para testear la notificación (REVERTIR)
+  return m[1].toLowerCase() === "instock";
 }
 
 async function loadState() {
