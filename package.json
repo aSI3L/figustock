@@ -1,0 +1,10 @@
+{
+  "name": "zonakids-stock-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Monitorea stock en zonakids.com y avisa por Telegram",
+  "scripts": {
+    "check": "node check.js"
+  }
+}
